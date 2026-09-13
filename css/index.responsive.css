@@ -1,0 +1,150 @@
+@media (max-width: 1300px) {
+    nav.navbar .navbar-brand {
+        width: 20%;
+    }
+    nav.navbar .navbar-collapse{
+        padding-block: 10px;
+        background: #ada996;
+        background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+        background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    nav.navbar .navbar-collapse ul:nth-of-type(1) {
+        max-width: 25%;
+        text-align: center;
+    }
+    nav.navbar .navbar-collapse ul:nth-of-type(2) {
+        width: 88px;
+        margin: auto;
+        margin-top: 20px !important;
+    }
+    #M-carousel>button {
+        bottom: 40px;
+
+    }
+    #M-carousel>button.prev {
+        right: 90px;
+    }
+    #M-carousel>button.next {
+        right: 20px;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item h2 {
+        font-size: 30px;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item p {
+        width: 100% !important;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 .item {
+        margin-top: 50px;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 img:nth-of-type(1) {
+        width: 70%;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 img:nth-of-type(2) {
+        width: 50%;
+        margin-left: 120px;
+        margin-top: 30px;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+    .title img {
+        width: 130px;
+    }
+    #Latest .product .part2 .item h2{
+        font-size: 20px;
+    }
+    #Featured .product {
+        max-width: 280px;
+        margin: auto;
+    }
+    .popup .box {
+        width: 280px !important ;
+    }
+    .popup[data-popup-name=product] .box {
+        margin: auto !important;
+    }
+
+}
+    
+@media (min-width: 371px) and (max-width: 1300px) {
+    .popup .box {
+        width: 350px !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    nav.navbar .navbar-brand {
+        width: 15%;
+    }
+    .title h2 {
+        font-size: 25px;
+    }
+    #Latest .product {
+        width: 75%;
+        margin: auto;
+    }
+    .popup[data-popup-name="login"] .box {
+        width: 400px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+     #M-carousel .M-carousel-inner .M-carousel-item p {
+        width: 80% !important;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 .item {
+        margin-top: 0px;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 img:nth-of-type(1) {
+        width: 110%;
+    }
+    #M-carousel .M-carousel-inner .M-carousel-item .part2 img:nth-of-type(2) {
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 35px;
+    }   
+    .title h2 {
+        font-size: 30px;
+    }  
+    #Latest .product .part1 .item {
+        margin-bottom: 10px;
+    }
+    .popup[data-popup-name=shop] .box,
+    .popup[data-popup-name=product] .box {
+        width: 750px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    nav.navbar .navbar-brand {
+        width: 8%;
+    }
+    nav.navbar .navbar-collapse{
+        background: transparent;
+    }
+    nav.navbar .navbar-collapse ul:nth-of-type(1) li.nav-item,
+    nav.navbar .navbar-collapse ul:nth-of-type(2) {
+        text-align: initial;
+        width: initial;
+        margin-inline: initial !important;
+    }
+    nav.navbar .navbar-collapse ul:nth-of-type(2) {
+        margin-top: 0 !important;
+    }
+     #Latest .product {
+        width: 100%;
+        margin: initial;
+    }
+    #Latest .product .part1 .item {
+        margin-bottom: 0px;
+    }
+    #Featured .product .body h6 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+    
+}

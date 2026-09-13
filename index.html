@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop the latest authentic sneakers, running shoes, and athletic footwear. Discover original designs, maximum comfort, and top performance kicks. Fast shipping and easy returns!">
+    <meta name="keywords"
+        content="sneakers, athletic shoes, running shoes, sports footwear, original kicks, basketball shoes, lifestyle sneakers, footwear store, buy shoes online, sports kicks">
+    <title>Nike</title>
+    <link rel="icon" type="image/x-icon" href="./images/first-logo.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/globle.css">
+    <link rel="stylesheet" href="./css/keyframs.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.responsive.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg scrolled">
+        <div class="container">
+            <a class="navbar-brand " href="#">
+                <img class="img-fluid" id="Logo" src="./images/first-logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler mainColor" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mainColor"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 column-gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Latest">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Featured">Featured</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled d-flex my-0 column-gap-2">
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-shopping-cart" onclick="showCart()"></i></li>
+                    <li><i class="fas fa-user" onclick="openPopup('login')"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header Section -->
+    <section id="Home">
+        <div id="M-carousel" class="vh-100">
+            <div class="M-carousel-inner h-100">
+                <div class="M-carousel-item active h-100" data-color-name="first">
+                    <div class="container h-100">
+                        <div class="row">
+                            <div class="col-md-6 part1">
+                                <div class="item">
+                                    <h5 class="mainColor">Nike Red Shoes</h5>
+                                    <h2 class="h1 my-3 ">Nike Metcon Shoes</h2>
+                                    <p class="w-75">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat
+                                        Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="btn mainButton" href="#Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 part2">
+                                <div class="item">
+                                    <img src="./images/home-shoe-1.png" alt="shoes">
+                                    <img class="img-fluid" src="./images/home-text-1.png" alt="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="M-carousel-item h-100" data-color-name="second">
+                    <div class="container h-100 ">
+                        <div class="row">
+                            <div class="col-md-6 part1">
+                                <div class="item">
+                                    <h5 class="mainColor">Nike Blue Shoes</h5>
+                                    <h2 class="h1 my-3 ">Nike Metcon Shoes</h2>
+                                    <p class="w-75">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat
+                                        Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="btn mainButton" href="#Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 part2">
+                                <div class="item">
+                                    <img src="./images/home-shoe-2.png" alt="shoes">
+                                    <img class="img-fluid" src="./images/home-text-2.png" alt="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="M-carousel-item h-100" data-color-name="third">
+                    <div class="container h-100">
+                        <div class="row">
+                            <div class="col-md-6 part1">
+                                <div class="item">
+                                    <h5 class="mainColor">Nike Yellow Shoes</h5>
+                                    <h2 class="h1 my-3 ">Nike Metcon Shoes</h2>
+                                    <p class="w-75">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Repellat
+                                        Maiores Et Eos Eaque Veritatis Aut Laboriosam Earum Dolorem Iste Atque.</p>
+                                    <a class="mainButton btn" href="#Latest">See More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 part2">
+                                <div class="item">
+                                    <img src="./images/home-shoe-3.png" alt="shoes">
+                                    <img class="img-fluid" src="./images/home-text-3.png" alt="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev btn rounded-circle mainButton"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next btn rounded-circle mainButton"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <!-- Sale -->
+        <div id="Offer">
+            <div class="row g-0">
+                <div class="col-md-6 part1">
+                    <div class="item">
+                        <img class="img-fluid w-100" src="./images/home-banner-1.png" alt="banner">
+                    </div>
+                </div>
+                <div class="col-md-6 part2">
+                    <div class="item">
+                        <img class="img-fluid w-100" src="./images/home-banner-2.png" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest -->
+    <section id="Latest" class="pt-5">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <h2>LATEST PRODUCTS</h2>
+                <img class="img-fluid" src="./images/first-correct.png" alt="title">
+            </div>
+            <div class="content d-flex flex-column row-gap-3">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section id="Featured" class="py-5">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <h2>FEATURE PRODUCTS</h2>
+                <img class="img-fluid" src="./images/first-correct.png" alt="title">
+            </div>
+            <div class="content">
+                <div class="row row-gap-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Page -->
+    <div class="loadingPage">
+        <img src="./images/nike.gif" alt="Loading Page">
+    </div>
+
+    <!-- Log in Popup -->
+    <div class="popup" data-popup-name="login" onclick="closePopup()">
+        <div class="box p-3 rounded-3">
+            <div class="head mainColor mb-4">
+                <i class="fa-regular fa-circle-xmark fs-4" onclick="closePopup()"></i>
+                <h4 class="text-center">Login</h4>
+            </div>
+            <div class="body">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="username" placeholder="UserName...">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" name="password" placeholder="Password...">
+                    </div>
+                    <button class="btn btn-success w-100">Log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop Popup -->
+    <div class="popup" data-popup-name="shop" onclick="closePopup()">
+        <div class="box py-3 px-4 rounded-3">
+            <div class="head mainColor mb-4">
+                <i class="fa-regular fa-circle-xmark fs-4" onclick="closePopup()"></i>
+                <h4 class="text-center">Shop</h4>
+            </div>
+            <div class="body">
+                <div class="row">
+                    
+                </div>
+                <button class="btn w-100 buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Popup -->
+    <div class="popup" data-popup-name="product" onclick="closePopup()">
+        <div class="box p-4 rounded-3">
+        
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy;2026 | Designed By Malak Ehab.
+        </p>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/shoes.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
