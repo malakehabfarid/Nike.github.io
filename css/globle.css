@@ -12,9 +12,45 @@
     font-family: Nunito, sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 body.no-scroll {
     overflow: hidden;
 }
+
+/* 
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color, #e55b5b); 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-button:single-button {
+    background-color: #fff;
+    display: block;
+    border-style: solid;
+    height: 16px;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 5px 0 5px;
+    border-color: #555 transparent transparent transparent;
+} */
 
 .mainButton {
     background-color: transparent;
@@ -98,12 +134,11 @@ section {
 }
 
 .size .value ul li {
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
     cursor: pointer;
 }
 
@@ -141,8 +176,21 @@ section {
     display: none;
     justify-content: center;
     align-items: center;
-    
+    overflow-y: auto;
+    max-height: 100vh;
 }
+
+.popup::-webkit-scrollbar {
+    width: 7px;
+}
+.popup::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.popup::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
 .popup.active {
     display: flex;
 }
@@ -157,8 +205,8 @@ section {
     transform: translateY(-200%);
     opacity: 0;
     transition-duration: 1s;
-    overflow-y: auto;
-    max-height: 95vh;
+    /* overflow-y: auto;
+    max-height: 95vh; */
 }
 .popup.show .box {
     transform: translateY(0%);
@@ -183,6 +231,7 @@ section {
     position: relative;
 }
 .popup .box .head i {
+    color: var(--main-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -197,6 +246,11 @@ section {
     color: #fff;
 }
 
+.popup .box .head i.productIcon {
+    top: 10px;
+    right: 10px;
+}
+
 .popup .box .body .buy {
     background-color: transparent;
     border: 1px solid var(--bs-success);
@@ -207,6 +261,28 @@ section {
     background-color: var(--bs-success);
     color: #fff;
 }
+
+.cartAlert {
+    width: 250px;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    z-index: 7;
+    text-align: center;
+    display: none;
+    transform: translateY(100%);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.cartAlert.active {
+    display: block;
+}
+
+.cartAlert.show {
+    transform: translateY(0%);
+    opacity: 1;
+} 
 
 
 .form-control:focus {

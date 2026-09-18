@@ -135,7 +135,7 @@ function getProduct(productId) {
 function showProduct(productId) {
     let product = getProduct(productId),
         popupProduct = document.querySelector(
-        `.popup[data-popup-name="product"] .box`,
+        `.popup[data-popup-name="product"] .box .body`,
         ),
         isProductIntoCart = checkProductIntoCart(product.id);
 
@@ -179,8 +179,8 @@ function showProduct(productId) {
                         </div>
                         ${
                         isProductIntoCart == null
-                            ? `<button class="mainButton btn" onclick="addToCart(${product.id}, this)">Add To Cart</button>`
-                            : `<button class="mainButton btn remove" onclick="removeFromCart(${product.id}, this)">Remove From Cart</button>`
+                            ? `<button class="mainButton btn" onclick="addToCart(${product.id}, this);addToCartAlert();">Add To Cart</button>`
+                            : `<button class="mainButton btn remove" onclick="removeFromCart(${product.id}, this);removeFromCartAlert();">Remove From Cart</button>`
                         }
                     </div>
                 </div>
@@ -290,7 +290,7 @@ function showCart() {
                                     </ul>
                                 </div>
                             </div>
-                            <button class="btn btn-danger w-100 mt-3" onclick="removeFromShop(${product.id}); ">Remove</button>
+                            <button class="btn btn-danger w-100 mt-3" onclick="removeFromShop(${product.id}); removeFromCartAlert(); ">Remove</button>
                         </div>
                     </div>
                 </div>
@@ -308,4 +308,28 @@ function removeFromShop(productId) {
 
     removeFromCart(productId, latestButton); 
     showCart();
+}
+
+function addToCartAlert(){
+    let addAlertMessage1 = document.querySelector(".cartAlert1");
+    addAlertMessage1.classList.add("active");
+    setTimeout(function () {
+        addAlertMessage1.classList.add("show");
+    }, 1);
+    setTimeout(function () {
+        addAlertMessage1.classList.remove("show");
+        addAlertMessage1.classList.remove("active");
+    }, 1000);
+}
+
+function removeFromCartAlert(){
+    let removeAlertMessage2 = document.querySelector(".cartAlert2");
+    removeAlertMessage2.classList.add("active");
+    setTimeout(function () {
+        removeAlertMessage2.classList.add("show");
+    }, 1);
+    setTimeout(function () {
+        removeAlertMessage2.classList.remove("show");
+        removeAlertMessage2.classList.remove("active");
+    }, 1000);
 }

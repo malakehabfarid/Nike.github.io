@@ -3,7 +3,7 @@
         width: 20%;
     }
     nav.navbar .navbar-collapse{
-        padding-block: 10px;
+        padding-block: 15px;
         background: #ada996;
         background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
         background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
@@ -25,6 +25,7 @@
     }
     #M-carousel>button.prev {
         right: 90px;
+        left: initial;
     }
     #M-carousel>button.next {
         right: 20px;

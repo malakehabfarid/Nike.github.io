@@ -43,7 +43,7 @@
                         <a class="nav-link" href="#Featured">Featured</a>
                     </li>
                 </ul>
-                <ul class="list-unstyled d-flex my-0 column-gap-2">
+                <ul class="list-unstyled d-flex my-0 column-gap-3">
                     <li><i class="fas fa-heart"></i></li>
                     <li><i class="fas fa-shopping-cart" onclick="showCart()"></i></li>
                     <li><i class="fas fa-user" onclick="openPopup('login')"></i></li>
@@ -212,10 +212,18 @@
 
     <!-- Product Popup -->
     <div class="popup" data-popup-name="product" onclick="closePopup()">
-        <div class="box p-4 rounded-3">
-        
+        <div class="box rounded-3">
+            <div class="head">
+                <i class="fa-regular fa-circle-xmark fs-4 productIcon" onclick="closePopup()"></i>
+            </div>
+            <div class="body p-4">
+
+            </div>
         </div>
     </div>
+
+    <p class="cartAlert cartAlert1 alert alert-success" role="alert">Added into cart!</p>
+    <p class="cartAlert cartAlert2 alert alert-warning" role="alert">Removed from cart!</p>
 
     <footer>
         <p>

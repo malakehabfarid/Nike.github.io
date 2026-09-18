@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", function(){
     loadingPage.classList.add("hide");
     setTimeout(function() {
         loadingPage.classList.add("d-none");
-    }, 2000);
+    }, 1500);
 });
 
 latest.forEach(function (product) {
@@ -134,8 +134,8 @@ latest.forEach(function (product) {
                         </div>
                         ${
                             (isProductIntoCart == null)? 
-                            `<button class="mainButton btn" onclick="addToCart(${product.id}, this)">Add To Cart</button>`:
-                            `<button class="mainButton btn remove" onclick="removeFromCart(${product.id}, this)">Remove From Cart</button>`
+                            `<button class="mainButton btn" onclick="addToCart(${product.id}, this);addToCartAlert()">Add To Cart</button>`:
+                            `<button class="mainButton btn remove" onclick="removeFromCart(${product.id}, this);removeFromCartAlert()">Remove From Cart</button>`
                         }  
                     </div>
                 </div>
@@ -149,7 +149,7 @@ features.forEach(function (product) {
         <div class="col-lg-3 col-sm-6">
             <div class="item">
                 <div class="product bg-light text-center p-3 rounded-3">
-                    <p class="discount ${(product.discount == 0)? 'd-none': ''}">-${product.discount * 100}</p>
+                    <p class="discount ${(product.discount == 0)? 'd-none': ''}">-${product.discount * 100}%</p>
                     <div class="head text-center">
                         <div class="selectedImg">
                             <img class="img-fluid" src="./images/products/${product.images[0]}" alt="Featured">

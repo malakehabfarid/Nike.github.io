@@ -78,6 +78,7 @@ nav.navbar i {
     color: #777777;
     font-size: 20px;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 nav.navbar i:hover {
@@ -107,11 +108,11 @@ nav.navbar i:hover {
 }
 
 #M-carousel>button.prev {
-    right: 1450px;
+    left: 30px;
 }
 
 #M-carousel>button.next {
-    right: 20px;
+    right: 30px;
 }
 
 #M-carousel .M-carousel-inner {
@@ -254,6 +255,7 @@ nav.navbar i:hover {
 #Latest .product .part1 .box1 .item ul li img {
     transform: scale(0.9);
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 #Latest .product .part1 .box1 .item ul li:hover img {
     transform: scale(1.1);
